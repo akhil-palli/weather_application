@@ -23,8 +23,23 @@ function fetchWeather(location) {
             locationElement.textContent = data.name;
             temperatureElement.textContent = `${Math.round(data.main.temp)}°F`;
             descriptionElement.textContent = data.weather[0].description;
+            changeBackground();
         })
         .catch(error => {
             console.error('Error fetching weather data:', error);
         });
+}
+
+function changeBackground(){
+    if(descriptionElement.textContent.includes("clear sky")) {
+        document.body.style.backgroundImage = "url(https://i.pinimg.com/originals/3a/2a/8f/3a2a8f79d9d4a7d36a258fb129ba36f9.gif)"
+    }
+    if(descriptionElement.textContent.includes("cloud")) {
+        document.body.style.backgroundImage = "url(https://i.makeagif.com/media/8-08-2017/U8cAor.gif)"
+
+    }
+    
+    
+
+
 }
