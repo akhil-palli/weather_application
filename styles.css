@@ -7,6 +7,8 @@ body {
     font-style: normal;
     /* Arial, sans-serif; */
     background-color:rgba(251, 251, 251, 0.345);;
+    background-image: url('content/rain.mp4');
+    background-size: cover;
 }
 
 .container {
@@ -15,11 +17,11 @@ body {
     height: 500px;
     margin: 0 auto;
     background:rgba(255, 255, 255, 0.115);
-    backdrop-filter: blur(25px);
+    backdrop-filter: blur(50px);
     text-align: center;
     padding: 20px;
     /* background-color: rgba(255, 255, 255, 0.5); Set the background color to be transparent */
-    border-radius: 10px;
+    border-radius: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Adjust the alpha value here for the box shadow transparency */
     margin-top: 105px;
 }
