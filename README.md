@@ -9,3 +9,4 @@ Began changing fonts and search icons.
 
 Added more backgrounds to more weather descriptions.
 
+Implemented weather icons into container.
