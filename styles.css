@@ -1,14 +1,27 @@
 @import url("https://boxicons.com/");
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-body {
+html {
+    
+
+}
+
+body{
     font-family: "Roboto", sans-serif; 
     font-weight: 100;
     font-style: normal;
     /* Arial, sans-serif; */
-    background-color:rgba(251, 251, 251, 0.345);;
-    background-image: url('content/rain.mp4');
+    /* background-color:rgba(251, 251, 251, 0.345);; */
+    /* background-image: url('content/clouds-pic.jpg'); */
+    height: 100%;
+    margin: 0  ;
+    /* height:100%; */
+    background-attachment: fixed;
+    background-image: url('content/clouds-pic.jpg');
     background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+ 
 }
 
 .container {
@@ -20,7 +33,6 @@ body {
     backdrop-filter: blur(50px);
     text-align: center;
     padding: 20px;
-    /* background-color: rgba(255, 255, 255, 0.5); Set the background color to be transparent */
     border-radius: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Adjust the alpha value here for the box shadow transparency */
     margin-top: 105px;
@@ -91,6 +103,7 @@ button {
     font-weight: 500;
     height: 30px;
 }
-::placeholder {
+
+.locationInput ::placeholder {
     color: black;
 }

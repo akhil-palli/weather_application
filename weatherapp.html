@@ -1,45 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weather App</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href ="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel = "stylesheet" >
-    
-    
-</head>
-<body>
-    
-
-
-    <div class="container">
-        <p class="header"></p>
-        <input type="text" id="locationInput" placeholder="Enter a city">
-        <button class='bx bx-search-alt' id="searchButton" ></button>
-        <div class="weather-info">
-            <p class="location"></p>
-            <img id='myImg' src="content/cloud.png">
-            <p class="temperature"></p>
-            <p class="description"></p>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Weather App</title>
+        <link rel="stylesheet" href="styles.css">
+        <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <p class="header"></p>
+            <input type="text" id="locationInput" placeholder="Enter a city">
+            <button class='bx bx-search-alt' id="searchButton"></button>
+            <div class="weather-info">
+                <p class="location"></p>
+                <img id='myImg' src="content/cloud.png">
+                <p class="temperature"></p>
+                <p class="description"></p>
+            </div>
         </div>
-    </div>
-
-    
-
-    <script src="script.js"></script>
-</body>
-
-<style>
-
-
-    body{
-        background-image: url('content/clouds-pic.jpg');
-        background-size: cover;
-        background-attachment: fixed;
-    }
-    
-</style>
-
-
+        <script src="script.js"></script>
+    </body>
 </html>
