@@ -39,6 +39,10 @@ function fetchWeather(location) {
         })
         .catch(error => {
             console.error('Error fetching weather data:', error);
+            document.getElementById('myImg').src = 'content/LocationNotFound.png';
+            locationElement.textContent = 'Location Not Found!';
+            temperatureElement.textContent = '   ';
+            descriptionElement.textContent  = '   ';
         });
 }
 
